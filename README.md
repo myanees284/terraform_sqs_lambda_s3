@@ -8,5 +8,6 @@ This terraform code creates:<br>
 
 When the message is sent through the queue, the lambda function reads the queue,extracts the message and dumps the data into S3 as json file.<br><br>
 *****command to run*****<br><br>
+terraform init </br>
 terraform apply -auto-approve -var-file="inputs.tfvars" </br>
 terraform destroy -auto-approve -var-file="inputs.tfvars"
